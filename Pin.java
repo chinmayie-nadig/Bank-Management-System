@@ -19,7 +19,7 @@ public class Pin extends JFrame implements ActionListener {
         setSize(960, 1080);
         setLocation(500, 0);
         setUndecorated(true);
-        setLayout(null);  // Important for absolute positioning
+        setLayout(null); 
 
         // Background image
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("bank/icons/atm.jpg"));
@@ -27,7 +27,7 @@ public class Pin extends JFrame implements ActionListener {
         ImageIcon i3 = new ImageIcon(i2);
         JLabel background = new JLabel(i3);
         background.setBounds(0, 0, 960, 1080);
-        setContentPane(background); // ✅ Properly sets it as the background
+        setContentPane(background); 
 
         // Labels
         l1 = new JLabel("CHANGE YOUR PIN");
@@ -59,7 +59,7 @@ public class Pin extends JFrame implements ActionListener {
         t2.setBounds(350, 440, 180, 25);
         background.add(t2);
 
-        // Buttons
+    
         b1 = new JButton("CHANGE");
         b2 = new JButton("BACK");
         b1.setBounds(390, 588, 150, 35);
