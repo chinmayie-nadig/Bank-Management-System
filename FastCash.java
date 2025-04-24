@@ -15,7 +15,7 @@ public class FastCash extends JFrame implements ActionListener {
     FastCash(String pin) {
         this.pin = pin;
 
-        // Load and resize the background image
+        
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("bank/icons/atm.jpg"));
         Image i2 = i1.getImage().getScaledInstance(960, 1080, Image.SCALE_DEFAULT);
         ImageIcon i3 = new ImageIcon(i2);
@@ -37,7 +37,7 @@ public class FastCash extends JFrame implements ActionListener {
         b6 = new JButton("Rs 10000");
         b7 = new JButton("BACK");
 
-        // Set button positions and add them
+    
         int x1 = 170, x2 = 390;
         int y = 499, gap = 44;
         b1.setBounds(x1, y, 150, 35);
@@ -56,7 +56,7 @@ public class FastCash extends JFrame implements ActionListener {
         background.add(b6);
         background.add(b7);
 
-        // Add listeners
+      
         b1.addActionListener(this);
         b2.addActionListener(this);
         b3.addActionListener(this);
